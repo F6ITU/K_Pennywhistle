@@ -1,0 +1,9 @@
+(fp_lib_table
+	(version 7)
+	(lib (name "masque") (type "KiCad") (uri "${KIPRJMOD}/Documentation/masque.pretty") (options "") (descr ""))
+	(lib (name "Amidon_Binocular") (type "KiCad") (uri "${KIPRJMOD}/Libs/Amidon_Binocular.pretty") (options "") (descr ""))
+	(lib (name "Fair-Rite_2743021447") (type "KiCad") (uri "${KIPRJMOD}/Libs/Fair-Rite_2743021447") (options "") (descr ""))
+	(lib (name "Ferrite_LC_NFM41P") (type "KiCad") (uri "${KIPRJMOD}/Libs/Ferrite_LC_NFM41P.pretty") (options "") (descr ""))
+	(lib (name "SMA_PINS") (type "KiCad") (uri "${KIPRJMOD}/Libs/SMA_PINS.pretty") (options "") (descr ""))
+	(lib (name "Inductor_VK200") (type "KiCad") (uri "${KIPRJMOD}/Libs/Inductor_VK200.pretty/Inductor_VK200.pretty") (options "") (descr ""))
+)

@@ -1,0 +1,161 @@
+(footprint "L_Axial_L12.8mm_D5.8mm_P5.08mm_Vertical_Fastron_HBCC"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Inductor, Axial series, Axial, Vertical, pin pitch=5.08mm, length*diameter=12.8*5.8mm^2, Fastron, HBCC, http://www.fastrongroup.com/image-show/18/HBCC.pdf?type=Complete-DataSheet&productType=series")
+	(tags "Inductor Axial series Axial Vertical pin pitch 5.08mm  length 12.8mm diameter 5.8mm Fastron HBCC")
+	(property "Reference" "L2"
+		(at 2.54 -4.02 0)
+		(layer "F.SilkS")
+		(uuid "7799f616-2d9c-4e17-b9e4-f1901c39fb9b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "VK200"
+		(at 2.54 4.02 0)
+		(layer "F.Fab")
+		(uuid "c49a552f-97b6-43b2-8628-26359f62a557")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "4d113290-8cf7-4941-bc81-194a50ff7f0d")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" "Inductor with ferrite core"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "6a9c7429-4fe9-49cb-b804-bcb35ae6e120")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "KiLib_Generator" "choke_THT"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "05d9425e-7399-4821-b97c-6cfccd062858")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property ki_fp_filters "Choke_* *Coil* Inductor_* L_*")
+	(sheetname "/")
+	(sheetfile "Mirliton.kicad_sch")
+	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start 3.02 0)
+		(end 3.68 0)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "38d78de2-4d47-44c8-9a21-bca2f83d8946")
+	)
+	(fp_circle
+		(center 0 0)
+		(end 3.02 0)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "564a9b09-6cfa-484c-9fbf-6731fac4e490")
+	)
+	(fp_rect
+		(start -3.15 -3.15)
+		(end 6.43 3.15)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "ccdf9c48-97af-47c3-b1d6-b477d84a9959")
+	)
+	(fp_line
+		(start 0 0)
+		(end 5.08 0)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "dca7732e-9548-4c4c-8cfb-857e6d0d0ff0")
+	)
+	(fp_circle
+		(center 0 0)
+		(end 2.9 0)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "67c1b55c-a58f-4da3-8fed-25cb0938fb76")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 -1.6 0)
+		(layer "F.Fab")
+		(uuid "7847d6fa-132b-413e-b024-11b0524f7564")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at 0 0)
+		(size 2.2 2.2)
+		(drill 1.1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "be13c1d0-25d6-4751-b07d-7229d567c257")
+	)
+	(pad "2" thru_hole circle
+		(at 5.08 0)
+		(size 2.2 2.2)
+		(drill 1.1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "9ddbd33f-01e6-40d8-8baf-4f67c98b102e")
+	)
+	(embedded_fonts no)
+	(model "${KICAD10_3DMODEL_DIR}/Inductor_THT.3dshapes/L_Axial_L12.8mm_D5.8mm_P5.08mm_Vertical_Fastron_HBCC.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
