@@ -1109,27 +1109,29 @@
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "L"
-				(at 0 4.445 0)
+			(property "Reference" "T2"
+				(at 0.8891 -3.81 90)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify right)
 				)
 			)
-			(property "Value" "L_Coupled"
-				(at 0 -4.445 0)
+			(property "Value" "TLT BN43-202"
+				(at -1.6509 -3.81 90)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify right)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "Amidon_Binocular:BN-61-202"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1375,10 +1377,40 @@
 						(type none)
 					)
 				)
+				(polyline
+					(pts
+						(xy 5.08 -2.54) (xy 5.08 0) (xy -5.08 0) (xy -5.08 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 			)
 			(symbol "L_Coupled_1_1"
 				(pin passive line
 					(at -5.08 2.54 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -2.54 180)
 					(length 2.54)
 					(name "1"
 						(effects
@@ -1424,24 +1456,6 @@
 						)
 					)
 					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 -2.54 180)
-					(length 2.54)
-					(name "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4024,12 +4038,6 @@
 		(uuid "7777c966-f120-400e-bf8a-518ce573587e")
 	)
 	(junction
-		(at 210.82 83.82)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "79189523-775b-43a9-a9f6-8a1b0dfbcb96")
-	)
-	(junction
 		(at 180.34 41.91)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4066,12 +4074,6 @@
 		(uuid "8875e9f0-a581-40b1-b836-3e530d74de70")
 	)
 	(junction
-		(at 210.82 67.31)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "88791d41-58a7-4b5e-937f-aff39c0bc3b1")
-	)
-	(junction
 		(at 180.34 87.63)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4100,6 +4102,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "937a1020-015d-4296-9765-84a736c9c553")
+	)
+	(junction
+		(at 185.42 83.82)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "95e028b3-2505-411e-9cd5-0a918058535e")
 	)
 	(junction
 		(at 218.44 67.31)
@@ -4198,6 +4206,12 @@
 		(uuid "eef13892-d3fd-4372-b8be-f9df132727a7")
 	)
 	(junction
+		(at 210.82 83.82)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f02792cd-e6e8-4896-a712-839740d38f7f")
+	)
+	(junction
 		(at 95.25 40.64)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4215,6 +4229,16 @@
 	)
 	(wire
 		(pts
+			(xy 203.2 45.72) (xy 198.12 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0dd2e4d2-2bd1-4f07-965e-338ce0f2f9b6")
+	)
+	(wire
+		(pts
 			(xy 170.18 85.09) (xy 170.18 87.63)
 		)
 		(stroke
@@ -4222,6 +4246,16 @@
 			(type default)
 		)
 		(uuid "0f43d6ff-7c07-4402-9f39-d1af1f358c7a")
+	)
+	(wire
+		(pts
+			(xy 198.12 45.72) (xy 198.12 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1205ebda-0bc6-4e4c-89a0-69112cc5dc7f")
 	)
 	(wire
 		(pts
@@ -4452,16 +4486,6 @@
 			(type default)
 		)
 		(uuid "6c5c8041-54b1-4120-9515-7a5c8ab89b7c")
-	)
-	(wire
-		(pts
-			(xy 210.82 67.31) (xy 210.82 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6d91d97e-bc72-492d-ae63-e680e29085fe")
 	)
 	(wire
 		(pts
@@ -4725,6 +4749,16 @@
 	)
 	(wire
 		(pts
+			(xy 198.12 41.91) (xy 185.42 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a2fae9f9-06e0-4bfb-99f5-7c7647870e83")
+	)
+	(wire
+		(pts
 			(xy 170.18 67.31) (xy 172.72 67.31)
 		)
 		(stroke
@@ -4782,6 +4816,16 @@
 			(type default)
 		)
 		(uuid "af87ad80-1056-430e-8d79-69defc595d3c")
+	)
+	(wire
+		(pts
+			(xy 185.42 83.82) (xy 190.5 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b3f76696-5798-4ed2-b69a-d03ad69dd764")
 	)
 	(wire
 		(pts
@@ -4855,7 +4899,7 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 83.82) (xy 190.5 83.82)
+			(xy 180.34 83.82) (xy 185.42 83.82)
 		)
 		(stroke
 			(width 0)
@@ -4995,7 +5039,7 @@
 	)
 	(wire
 		(pts
-			(xy 210.82 67.31) (xy 218.44 67.31)
+			(xy 203.2 67.31) (xy 218.44 67.31)
 		)
 		(stroke
 			(width 0)
@@ -5032,16 +5076,6 @@
 			(type default)
 		)
 		(uuid "dd7b9ca7-a335-4c39-8442-59b565ab0cfc")
-	)
-	(wire
-		(pts
-			(xy 180.34 52.07) (xy 185.42 41.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "de3ddaeb-5e49-4573-bb5d-dd775a9a8d3f")
 	)
 	(wire
 		(pts
@@ -5132,16 +5166,6 @@
 			(type default)
 		)
 		(uuid "f6f3d57b-bee9-4fd2-9901-a281356ed9bb")
-	)
-	(wire
-		(pts
-			(xy 203.2 67.31) (xy 210.82 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fdaa47e8-0bd1-4d54-82a4-26cbc3070b6b")
 	)
 	(symbol
 		(lib_id "Device:Transformer_1P_SS")
@@ -5254,7 +5278,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Conn_Coaxial"
+		(property "Value" "DMZ"
 			(at 236.22 42.2031 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5669,7 +5693,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
 			(at 140.97 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -5750,7 +5774,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
 			(at 223.52 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -6038,6 +6062,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 148.59 115.57 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "28664f1d-7e24-4c11-a14e-9a310d62f738")
+		(property "Reference" "#PWR0113"
+			(at 148.59 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 148.59 120.65 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 148.59 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 148.59 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 148.59 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d84832fa-bcc8-47c8-8aa4-4b88842f208a")
+		)
+		(instances
+			(project "K_Pennywhistle"
+				(path "/e9063a7b-4925-4b03-987f-f1b272cac139"
+					(reference "#PWR0113")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 200.66 30.48 270)
 		(unit 1)
@@ -6070,7 +6172,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1812_4532Metric_Pad1.57x3.40mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
 			(at 200.66 30.48 0)
 			(hide yes)
 			(show_name no)
@@ -6517,7 +6619,7 @@
 		(pin "3"
 			(uuid "eb747c26-eb54-4747-95d4-f61d2ca0d6c7")
 		)
-		(pin "4"
+		(pin "1"
 			(uuid "346146af-d4be-4f1e-8050-42fb5a5c179c")
 		)
 		(instances
@@ -6562,7 +6664,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1812_4532Metric_Pad1.57x3.40mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
 			(at 200.66 38.1 0)
 			(hide yes)
 			(show_name no)
@@ -7443,6 +7545,86 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 171.8022 112.7686 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4c4f3a10-c71e-434d-a94b-f81fa751ae45")
+		(property "Reference" "H107"
+			(at 174.3422 111.4985 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 174.3422 112.7685 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_ISO14580_Pad_TopBottom"
+			(at 171.8022 112.7686 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 171.8022 112.7686 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 171.8022 112.7686 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f71c54ed-8554-49ed-b639-0dae8de67fcc")
+		)
+		(instances
+			(project "K_Pennywhistle"
+				(path "/e9063a7b-4925-4b03-987f-f1b272cac139"
+					(reference "H107")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 226.8073 111.2252 0)
 		(unit 1)
@@ -7707,7 +7889,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
 			(at 129.54 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -7945,7 +8127,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1812_4532Metric_Pad1.57x3.40mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
 			(at 176.53 46.99 0)
 			(hide yes)
 			(show_name no)
@@ -8478,6 +8660,86 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 148.59 113.03 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "65c42746-ba09-476a-9aea-a5f5baf19eb4")
+		(property "Reference" "H105"
+			(at 151.13 111.7599 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 151.13 113.0299 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_ISO14580_Pad_TopBottom"
+			(at 148.59 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 148.59 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 148.59 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "97c35156-765d-4606-b4be-c0339d2d77c7")
+		)
+		(instances
+			(project "K_Pennywhistle"
+				(path "/e9063a7b-4925-4b03-987f-f1b272cac139"
+					(reference "H105")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 149.86 62.23 90)
 		(unit 1)
@@ -8785,6 +9047,84 @@
 			(project "K_Pennywhistle"
 				(path "/e9063a7b-4925-4b03-987f-f1b272cac139"
 					(reference "#PWR032")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+12V")
+		(at 210.82 83.82 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6c50ec57-7bcb-4e91-8f5f-b5091380137c")
+		(property "Reference" "#PWR0112"
+			(at 210.82 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+12V"
+			(at 210.82 78.74 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 210.82 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 210.82 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+12V\""
+			(at 210.82 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "560f3618-451d-435f-a9a0-c76fa80698df")
+		)
+		(instances
+			(project "K_Pennywhistle"
+				(path "/e9063a7b-4925-4b03-987f-f1b272cac139"
+					(reference "#PWR0112")
 					(unit 1)
 				)
 			)
@@ -9101,6 +9441,86 @@
 			(project "K_Pennywhistle"
 				(path "/e9063a7b-4925-4b03-987f-f1b272cac139"
 					(reference "#PWR05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 182.6487 113.4978 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7504f3f9-9d2f-4b54-a4e0-d670be5154e5")
+		(property "Reference" "H108"
+			(at 185.1887 112.2277 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 185.1887 113.4977 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_ISO14580_Pad_TopBottom"
+			(at 182.6487 113.4978 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 182.6487 113.4978 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 182.6487 113.4978 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "141a0db1-58ff-4b1d-a391-5dde1e505e7b")
+		)
+		(instances
+			(project "K_Pennywhistle"
+				(path "/e9063a7b-4925-4b03-987f-f1b272cac139"
+					(reference "H108")
 					(unit 1)
 				)
 			)
@@ -9618,7 +10038,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
 			(at 149.86 36.83 0)
 			(hide yes)
 			(show_name no)
@@ -9698,7 +10118,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
 			(at 149.86 66.04 0)
 			(hide yes)
 			(show_name no)
@@ -9858,7 +10278,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1812_4532Metric_Pad1.57x3.40mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
 			(at 200.66 62.23 0)
 			(hide yes)
 			(show_name no)
@@ -9901,6 +10321,86 @@
 			(project "K_Pennywhistle"
 				(path "/e9063a7b-4925-4b03-987f-f1b272cac139"
 					(reference "C51")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 159.4973 112.4952 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8ba3cbc7-2d0c-4dcf-ba6c-43802c90c6d9")
+		(property "Reference" "H106"
+			(at 162.0373 111.2251 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 162.0373 112.4951 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_ISO14580_Pad_TopBottom"
+			(at 159.4973 112.4952 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 159.4973 112.4952 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 159.4973 112.4952 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b64c3108-eb97-45d0-8933-963ae9818983")
+		)
+		(instances
+			(project "K_Pennywhistle"
+				(path "/e9063a7b-4925-4b03-987f-f1b272cac139"
+					(reference "H106")
 					(unit 1)
 				)
 			)
@@ -10261,7 +10761,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
 			(at 203.2 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -10341,7 +10841,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
 			(at 129.54 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -11214,7 +11714,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
 			(at 190.5 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -11375,7 +11875,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1812_4532Metric_Pad1.57x3.40mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
 			(at 200.66 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -11418,6 +11918,84 @@
 			(project "K_Pennywhistle"
 				(path "/e9063a7b-4925-4b03-987f-f1b272cac139"
 					(reference "C12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 159.4973 115.0352 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "aee6a14b-b8e9-4b73-9358-86c33c8e5b8e")
+		(property "Reference" "#PWR0114"
+			(at 159.4973 121.3852 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 159.4973 120.1152 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 159.4973 115.0352 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 159.4973 115.0352 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 159.4973 115.0352 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a309bad9-ffcb-48e5-a4ec-7da3025c0ddb")
+		)
+		(instances
+			(project "K_Pennywhistle"
+				(path "/e9063a7b-4925-4b03-987f-f1b272cac139"
+					(reference "#PWR0114")
 					(unit 1)
 				)
 			)
@@ -11496,6 +12074,84 @@
 			(project "K_Pennywhistle"
 				(path "/e9063a7b-4925-4b03-987f-f1b272cac139"
 					(reference "#PWR027")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 182.6487 116.0378 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b08f89c4-7111-4bb4-b6ae-b42bd97f6ea9")
+		(property "Reference" "#PWR0116"
+			(at 182.6487 122.3878 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 182.6487 121.1178 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 182.6487 116.0378 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 182.6487 116.0378 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 182.6487 116.0378 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "963333f9-fdfe-49f9-9f63-5202a5c5c215")
+		)
+		(instances
+			(project "K_Pennywhistle"
+				(path "/e9063a7b-4925-4b03-987f-f1b272cac139"
+					(reference "#PWR0116")
 					(unit 1)
 				)
 			)
@@ -11848,7 +12504,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1812_4532Metric_Pad1.57x3.40mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
 			(at 200.66 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -12086,7 +12742,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
 			(at 231.14 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -12450,7 +13106,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 185.42 90.17 0)
+		(at 185.42 86.36 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -12460,7 +13116,7 @@
 		(dnp no)
 		(uuid "cd7a308c-f1e4-48bb-afed-f8d6572b4122")
 		(property "Reference" "C24"
-			(at 182.88 90.17 0)
+			(at 182.88 86.36 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12471,7 +13127,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 182.88 92.71 0)
+			(at 182.88 88.9 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12481,8 +13137,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
-			(at 185.42 90.17 0)
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
+			(at 185.42 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12493,7 +13149,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 185.42 90.17 0)
+			(at 185.42 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12504,7 +13160,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 185.42 90.17 0)
+			(at 185.42 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13190,7 +13846,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Conn_Coaxial"
+		(property "Value" "SMA"
 			(at 71.12 42.2031 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13557,7 +14213,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1812_4532Metric_Pad1.57x3.40mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
 			(at 200.66 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -13600,6 +14256,84 @@
 			(project "K_Pennywhistle"
 				(path "/e9063a7b-4925-4b03-987f-f1b272cac139"
 					(reference "C16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 171.8022 115.3086 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ebc4b685-ae56-43b0-bf9b-d9b166f5aca8")
+		(property "Reference" "#PWR0115"
+			(at 171.8022 121.6586 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 171.8022 120.3886 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 171.8022 115.3086 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 171.8022 115.3086 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 171.8022 115.3086 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d8c6b4ce-2864-4b69-bff9-771fd6b53b88")
+		)
+		(instances
+			(project "K_Pennywhistle"
+				(path "/e9063a7b-4925-4b03-987f-f1b272cac139"
+					(reference "#PWR0115")
 					(unit 1)
 				)
 			)
@@ -13797,7 +14531,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
 			(at 210.82 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -14037,7 +14771,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
 			(at 238.76 69.85 0)
 			(hide yes)
 			(show_name no)
