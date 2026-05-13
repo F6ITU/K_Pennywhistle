@@ -1,10 +1,6 @@
 # K\_Pennywhistle
 
-**K\_Pennywhistle**
-
-
-
-A 20W HF amplifier by KE9H
+**A 20W HF amplifier by KE9H**
 
 Pennywhistle is a linear amplifier based on a pair of Mitsubishi FET (RD16HHF1 or RD15HVF1) that was originally (17 years ago) used to boost the output power of the very first SDRs using the Hermes board.
 
@@ -14,11 +10,7 @@ In the meantime, numerous variations have emerged, notably the famous G6ALU, whi
 
 This same amplifier is also integrated into the filter board of the Anan 100 series and serves as  driver for the RD100HHF1 output stage.
 
-
-
-!\[Pennywhistle, a 16W HF linear amplifier](https://github.com/F6ITU/K\_Pennywhistle/blob/main/Documentation/K\_Pennywhistle.png)
-
-
+![Pennywhistle, a 16W HF linear amplifier](https://github.com/F6ITU/K_Pennywhistle/blob/main/Documentation/K_Pennywhistle.png)
 
 Why build such a clone in 2026 ?
 
