@@ -3798,6 +3798,16 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "14/05/2026"
+		(exclude_from_sim no)
+		(at 213.36 193.04 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "1ce15341-c43e-47e3-baf8-b28adabf7075")
+	)
 	(text "2T\n"
 		(exclude_from_sim no)
 		(at 113.03 44.45 0)
@@ -3807,6 +3817,19 @@
 			)
 		)
 		(uuid "20f08be3-5b7f-4481-ad70-aea8d9c56a10")
+	)
+	(text "Pennywhistle\n\nKE9H OpenHPSDR HF Amplifier"
+		(exclude_from_sim no)
+		(at 229.87 173.99 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(thickness 0.3048)
+				(bold yes)
+				(color 53 51 255 1)
+			)
+		)
+		(uuid "215bf359-d617-42e6-89bc-2ebf7139a7be")
 	)
 	(text "5W version : \nQ1=Q2=RD06HVF1\nIbias : 125mA each FET\nR1=R2=R3=R4=50R\n\n"
 		(exclude_from_sim no)
@@ -3888,6 +3911,18 @@
 			)
 		)
 		(uuid "a6398b4c-7341-4043-9fc3-df3b1e9e1e70")
+	)
+	(text "1/1"
+		(exclude_from_sim no)
+		(at 189.23 184.15 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "af05c1a5-95ca-4b05-9920-99ab2300a334")
 	)
 	(text "1T"
 		(exclude_from_sim no)
